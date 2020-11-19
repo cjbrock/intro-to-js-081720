@@ -3,7 +3,8 @@
 Study Group Agenda:
 
 1. What is the DOM?
-Document object model
+- Document object model
+- Use JS to manipulate our HTML elements 
 
 2. The Chrome Console
 

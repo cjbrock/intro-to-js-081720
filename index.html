@@ -1,32 +1,49 @@
+<head>
+
+</head>
+
 <html>
 
   <body>
-    <h1>Our New JS App</h1>
-    <h2 class="my-h2">This is</h2>
+    <h1 id="my-h1">Hey everyone</h1>
+    <h2 class="my-h2" id="my-h2">This is</h2>
     <h2 class="my-h2">Sparta</h2>
+    <p>this is a paragraph</p>
     
   </body>
 
 
   <script>
-    const h1Tag = document.body.children[0]
-    const hello = "What's up"
-    h1Tag.id = "bigger-h1"
 
-    h1Tag.innerText = `${hello} Git Down On It`
-
+    const h1Tag = document.getElementsByTagName("h1")[0]
     h1Tag.style.backgroundColor = "lightsteelblue"
 
-    const names = ["marsha", "brian", "matthew", "gavin", "jarbi"]
+    const greeting = "WAZZZZUUUUPPP"
+
+    h1Tag.innerText = `${greeting} DTZ`
+
+
+    const names = ["max", "eli", "adam", "sascha", "wendy"]
+
     names.forEach(function(name){
-      // create HTML element
-      h3Tag = document.createElement("h3")
-      // add our names to it
+      // create each HTML element
+      const h3Tag = document.createElement("h3")
+      // add our name to the element
       h3Tag.innerText = `Hello, ${name}`
-      // add the element to the page
+      // append the element to the page
       document.body.append(h3Tag)
     })
 
-    console.log(h1Tag, hello)
   </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
